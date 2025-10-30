@@ -8,4 +8,4 @@ RUN pip install flask
 
 COPY app.py .
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8081", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--timeout", "120", "app:app"]
