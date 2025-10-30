@@ -1,0 +1,16 @@
+# docker-compose.yml
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "5000:8081"   # host:container
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "80:80"       # host:container
+    restart: always
+
