@@ -25,3 +25,11 @@ docker-compose down
 - `frontend/` - React app (port 80)
 - `docker-compose.yml` - Container orchestration
 EOF
+
+## Docker Hub
+```bash
+# Pull to your local repo
+docker pull obnogil/frontend:v1.0
+docker pull obnogil/backend:v1.0
+
+
