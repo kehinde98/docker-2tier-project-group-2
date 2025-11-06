@@ -257,23 +257,5 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <script>
-fetch('http://172.203.160.233:8081/')
-  .then(res => res.text())
-  .then(data => {
-    const backendDiv = document.createElement('div');
-    backendDiv.style.marginTop = '50px';
-    backendDiv.style.textAlign = 'center';
-    backendDiv.innerHTML = `<h4>Backend says:</h4><p>${data}</p>`;
-    document.body.appendChild(backendDiv);
-  })
-  .catch(() => {
-    const errorDiv = document.createElement('div');
-    errorDiv.style.marginTop = '50px';
-    errorDiv.style.textAlign = 'center';
-    errorDiv.innerHTML = `<p style="color:red;">Cannot connect to backend</p>`;
-    document.body.appendChild(errorDiv);
-  });
-</script>
     </body>
 </html>
